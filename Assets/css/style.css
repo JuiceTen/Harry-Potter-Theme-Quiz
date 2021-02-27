@@ -1,0 +1,123 @@
+body {
+    line-height: 1.5;
+    background-image: url("https://images.ctfassets.net/usf1vwtuqyxm/3qDq1So6CseO6ek4MyuE0a/41f1755b77c83e22252a91e31297447c/FiliusFlitwick_PM_B1C10M2_CharmsClass_Moment.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+nav {
+    background-color: aqua;
+}
+
+
+#timer {
+    float: right;
+}
+.start-screen {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    background-image: url("https://images.ctfassets.net/usf1vwtuqyxm/3QQaEkThAnIAiXveGhJYD9/f79a571dbe9fd456d65e783040601fdc/hogwarts-castle-.jpg?fm=jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.start-screen h2, p , button{
+    justify-content: center;
+    flex: 0 0 100%;
+}
+#start {
+    margin: 0 40% 0;
+    flex: 0 0 20%;
+}
+
+#main-quiz {
+    display: none;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+
+#question-box {
+    margin-top: 20%;
+    margin-bottom: 20px;
+
+}
+
+#questions {
+    font-size: 28px;
+}
+
+.box li button {
+    margin: 7px;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 30%;
+}
+
+.highScore { 
+    color: white;
+}
+
+.highScore p {
+    margin-bottom: 5%;
+}
+
+#score-screen div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#score-screen img {
+    width: 250px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#score-list li:nth-child(odd){
+    background-color: rgb(190, 190, 245);
+}
+
+#reset {
+    margin-top: 20px;
+    float: right;
+}
+
+#reset-score {
+    justify-content: flex-end;
+    flex: 0 0 15%;
+}
+
+
+.displayShow {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.viewH100 {
+    min-height: 100vh;
+}
+
+button {
+    background-color: rgb(157, 157, 233);
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+}
+

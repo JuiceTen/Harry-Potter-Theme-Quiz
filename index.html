@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <title>
+        You're a Quizzard Harry
+    </title>
+    <link rel="stylesheet" title="text/css" href="./Assets/css/reset.css">
+    <link rel="stylesheet" title="text/css" href="./Assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" id="viewHigh">view highscore</a>
+            <p id="timer">Time: <span id= seconds>30</span></p>
+        </nav>
+    </header>
+
+    <section class ="start-screen text-center viewH100">
+        <h2>Welcome to Hogwurtz</h2>
+        <p>Make your dreams of being a quizzard come true.</p>
+        <button id ="start">
+            <p>Start Game</p>
+        </button>
+    </section>
+    <main id="main-quiz" class ="hide viewH100">
+
+        <div id ="question-box">
+            <h2 id="questions">this is a question</h2>
+        </div>
+
+        <div>
+            <ol class = "box">
+                <li>
+                    <button id="choice-1" class = "choice" onclick="checkAnswer('choice-1')">
+                        <p class = "value">test</p>
+                    </button>
+                </li>
+            
+                <li>
+                    <button id="choice-2" class = "choice" onclick="checkAnswer('choice-2')">
+                        <p class = "value">test</p>
+                    </button>
+                </li>
+
+                <li>
+                    <button id="choice-3" class = "choice" onclick="checkAnswer('choice-3')">
+                        <p class = "value">test</p>
+                    </button>
+                </li>
+
+                <li>
+                    <button id="choice-4" class = "choice" onclick="checkAnswer('choice-4')">
+                        <p class = "value">test</p>
+                    </button>
+                </li>
+            </ol>
+        </div>
+        <p id="correct">
+
+        </p>
+    </main>
+
+    <section class = "hide text-center viewH100 highScore">
+        <h2>🎊 Congratulation 🎊</h2>
+        <p> You are now a Quizzard 🧙</p>
+        <audio id = "wizard">
+            <source src = "./Assets/audio/youre-a-wizard.mp3">
+        </audio>
+        <div>
+            <input type="text" name="initials" placeholder="initials" id="name"></input>
+            <button id="submit"> submit </button>
+        </div>
+
+    </section>
+
+    <section id="score-screen" class = "viewH100 text-center hide">
+        <div id="displayIn">
+            <h2>HighScore List </h2> <button id = "reset-score">Reset Score</button>
+        </div>  
+    </br>
+        <ol id="score-list" class="list">
+        </ol>
+
+        <div id = "imgCont">
+
+        </div>
+
+        <button id = "reset">Resart Game</button>
+        <audio id = "gandalf">
+            <source src = "./Assets/audio/gandalf_shallnotpass.mp3">
+        </audio>
+ 
+    </section>
+
+<script src="./Assets/javascript/script.js"></script>
+</body>
+</html>
